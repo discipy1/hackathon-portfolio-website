@@ -5,9 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Discipy's Portfolio</title>  
         <style>
-            * {
-                background-color: aliceblue;
-            }
+            * {}
+
+            body {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+}
             nav ul {
                 list-style: none;
                 display: flex;
@@ -19,9 +22,16 @@
                 margin: 10px 20px;
             }
 
+            .navlink {
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+            }
+
             img {
-                position: relative;
-                top: 50%;
+                display: block;
+                border: 5px solid white;
+                align-content: center;
                 text-align: center;
             }
 
@@ -39,13 +49,14 @@
         </style>   
     </head>
     <body>
-        <nav>
+                <nav>
             <ul>
-                <li><a href="#discipy">Discipy</a></li>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#education-background">Education Background</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#programming-languages">Programming Languages</a></li>
+                <li><a class="navlink" href="#discipy">Discipy</a></li>
+                <li><a class="navlink" href="#about-me">About me</a></li>
+                <li><a class="navlink" href="#education-background">Education Background</a></li>
+                <li><a class="navlink" href="#interests">Interests</a></li>
+                <li><a class="navlink" href="#programming-languages">Programming Languages</a></li>
+                <li><a class="navlink" href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
         <header>
@@ -81,5 +92,34 @@
             <li>Testing New Software</li>
             <li>Playing Games</li>
         </ul>
+
+        <section id="programming-languages"><h2>Programming Languages</h2></section>
+        <p style="text-align: center;">I am proficient in these programming languages:</p>
+        <ul style="text-align: center; list-style: none;">
+        <li>HTML</li>
+        <li>Javascript</li>
+        <li>CSS</li>
+        <li>Python</li>
+        <li><i>I am still learning though😁</i><li>
+        </ul>
+
+        <section id="contact-me"><h2>Contact Me</h2></section>
+        <p style="text-align: center; color: black;"> 071928160   Email: maydiscipy@gmail.com</p>
+        <br>
+        <form style="text-align: center;">
+            <p><strong>Request a call-back</strong></p>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Please enter your name">
+            <br><br>
+            <label for="phone">Phone number:</label>
+            <input type="number" placeholder="Please enter your phone number">
+            <br><br>
+            <label for="leave-a-comment">Leave a comment</label>
+            <input textarea placeholder="Please enter a comment">
+            <br><br>
+            <button type="submit">Submit</button>
+            <button typr="reset">Cancel</button>
+          </form>
+        
     </body>
 </html>
