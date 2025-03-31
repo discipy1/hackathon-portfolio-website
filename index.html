@@ -1,55 +1,115 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Discipy's Portfolio</title>  
         <style>
-            * {}
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
             body {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
-}
+                background: navy;
+                color: white;
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+
+            nav {
+                background-color: steelblue;
+                padding: 15px 0;
+            }
+
             nav ul {
                 list-style: none;
                 display: flex;
-                text-align: center;
                 justify-content: center;
-                text-decoration: none;
-                color: black;
-                background-color: lightblue;
-                margin: 10px 20px;
+                gap: 30px;
             }
 
             .navlink {
                 text-decoration: none;
-                color: black;
-                cursor: pointer;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: color 0.3s;
             }
 
-            img {
-                display: block;
-                border: 5px solid white;
-                align-content: center;
-                text-align: center;
-            }
-
-            dl {
-                text-align: center;
+            .navlink:hover {
+                color: gold;
             }
 
             h1 {
-                text-align: center;
+                margin: 20px 0;
+                font-size: 36px;
             }
+
+            h2 {
+                color: gold;
+                margin: 20px 0;
+            }
+
             section {
-                text-align: center;
+                margin: 20px;
+                padding: 20px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+            }
+
+            img {
+                width: 50%;
+                border: 5px solid white;
+                margin: 20px auto;
+                display: block;
+                border-radius: 10px;
+            }
+
+            ul, dl {
+                list-style: none;
+                padding: 0;
+            }
+
+            .download-cv {
+                margin-top: 20px;
+            }
+
+            .download-cv a {
+                display: inline-block;
+                padding: 10px 20px;
+                background: gold;
+                color: black;
+                text-decoration: none;
                 font-weight: bold;
+                border-radius: 5px;
+            }
+
+            .download-cv a:hover {
+                background: darkgoldenrod;
+            }
+
+            .social-icons {
+                margin-top: 20px;
+            }
+
+            .social-icons a {
+                margin: 0 10px;
+                display: inline-block;
+                color: white;
+                font-size: 24px;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+            .social-icons a:hover {
+                color: gold;
             }
         </style>   
     </head>
     <body>
-                <nav>
+        <nav>
             <ul>
                 <li><a class="navlink" href="#discipy">Discipy</a></li>
                 <li><a class="navlink" href="#about-me">About me</a></li>
@@ -59,67 +119,64 @@
                 <li><a class="navlink" href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
+        
         <header>
             <h1>This is Discipy</h1>
         </header>
 
-        <section id="discipy">Discipy</section>
-        <img src="https://th-thumbnailer.cdn-si-edu.com/gnVVC1OLQs1cWyFWBciZSwXKon8=/1072x720/filters:no_upscale():focal(792x601:793x602)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/52/e4/52e44474-c2dc-41e0-bb77-42a904695196/this-image-shows-a-portrait-of-dragon-man-credit-chuang-zhao_web.jpg" width="600">
+        <section id="discipy">
+            <h2>Discipy</h2>
+            <img src="https://th-thumbnailer.cdn-si-edu.com/gnVVC1OLQs1cWyFWBciZSwXKon8=/1072x720/filters:no_upscale():focal(792x601:793x602)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/52/e4/52e44474-c2dc-41e0-bb77-42a904695196/this-image-shows-a-portrait-of-dragon-man-credit-chuang-zhao_web.jpg" width="600">
+            <div class="download-cv">
+                <a href="https://drive.google.com/file/d/1sbsb4uD48OY_pKEWWNZUK0e7PbsQFP_a/view?usp=drive_link" download>Download My CV</a>
+            </div>
+        </section>
         
-        <section id="about-me"><h2>About me</h2></section>
-        <p style="text-align: center;">Hi, I’m Mohammed Ali, a tech enthusiast with a background in Linguistics, Media, and Communication. While my academic journey started in a different field, my passion for technology has led me to explore and transition into the tech industry. I’m constantly learning, building, and embracing new challenges. Excited for the opportunities ahead!</p>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I’m Mohammed Ali, a tech enthusiast with a background in Linguistics, Media, and Communication. While my academic journey started in a different field, my passion for technology has led me to explore and transition into the tech industry. I’m constantly learning, building, and embracing new challenges. Excited for the opportunities ahead!</p>
+        </section>
 
-        <section id="education-background"><h2>Education Background</h2></section>
-        <dl>
-            <dt>Bachelor's Degree in Linguistics, Media and Communication</dt>
-            <dd><i>Moi University</i></dd>
-            <br>
-            <dt>Certificate in A1 German Studies</dt>
-            <dd><i>Elimu ya Kenya School</i></dd>
-            <br>
-            <dt>Kenya Certificate of Secondary Education</dt>
-            <dd><i>Njia Boys High School</i></dd>
-            <br>
-            <dt>Kenya Certificate of Primary Education</dt>
-            <dd><i>Kisauni Primary School</i></dd>
-        </dl>
-        <section id="interests"><h2>Interests</h2></section>
-        <ul style="text-align: center; list-style: none;;">
-            <li>Meeting New People</li>
-            <li>Networking</li>
-            <li>Learning New Languages</li>
-            <li>Learning New Stuff</li>
-            <li>Testing New Software</li>
-            <li>Playing Games</li>
-        </ul>
+        <section id="education-background">
+            <h2>Education Background</h2>
+            <p>Software Engineering - <i>Power Learn Project Academy</i></p>
+            <p>Bachelor's Degree in Linguistics, Media, and Communication - <i>Moi University</i></p>
+        </section>
 
-        <section id="programming-languages"><h2>Programming Languages</h2></section>
-        <p style="text-align: center;">I am proficient in these programming languages:</p>
-        <ul style="text-align: center; list-style: none;">
-        <li>HTML</li>
-        <li>Javascript</li>
-        <li>CSS</li>
-        <li>Python</li>
-        <li><i>I am still learning though😁</i><li>
-        </ul>
+        <section id="interests">
+            <h2>Interests</h2>
+            <p>Technology, Quality Education Advocacy, Playing Games, Artificial Intelligence, and Digital Literacy.</p>
+        </section>
 
-        <section id="contact-me"><h2>Contact Me</h2></section>
-        <p style="text-align: center; color: black;"> 071928160   Email: maydiscipy@gmail.com</p>
-        <br>
-        <form style="text-align: center;">
-            <p><strong>Request a call-back</strong></p>
-            <label for="name">Name:</label>
-            <input type="text" placeholder="Please enter your name">
-            <br><br>
-            <label for="phone">Phone number:</label>
-            <input type="number" placeholder="Please enter your phone number">
-            <br><br>
-            <label for="leave-a-comment">Leave a comment</label>
-            <input textarea placeholder="Please enter a comment">
-            <br><br>
-            <button type="submit">Submit</button>
-            <button typr="reset">Cancel</button>
-          </form>
-        
+        <section id="programming-languages">
+            <h2>Programming Languages</h2>
+            <p>Python, HTML, CSS, JavaScript</p>
+        </section>
+
+        <section id="contact-me">
+            <h2>Contact Me</h2>
+            <p>Phone: 071928160 | Email: maydiscipy@gmail.com</p>
+            <p style="color: white; text-decoration: none;">WhatsApp: <a href="https://wa.me/25471928160" target="_blank">Chat with me</a></p>
+            <br>
+            <form>
+                <p><strong>Request a Call-Back</strong></p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <br><br>
+                <label for="phone">Phone number:</label>
+                <input type="number" id="phone" placeholder="Enter your phone number">
+                <br><br>
+                <label for="comment">Leave a comment:</label>
+                <input type="text" id="comment" placeholder="Enter a comment">
+                <br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </form>
+            <div class="social-icons">
+                <a href="https//:www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/in/mohali001/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/discipy1" target="_blank">GitHub</a>
+            </div>
+        </section>
     </body>
 </html>
